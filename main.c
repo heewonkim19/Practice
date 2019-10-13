@@ -2,23 +2,18 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-/* sun_light */
+/* change x and y  */
 int main(int argc, char *argv[]) {
     
-	double light_speed = 300000;
-    double distance = 149600000;
-    
-    int time;
-    int minute;
-    int second;
-    time = distance / light_speed;
-	minute = time / 60;
-	second = time % 60; 
+	int x=10;
+	int y=20;
 	
-	printf("light_speed is %fkm \n", light_speed);
-	printf("distance is %f km \n", distance);
-	printf("time is %dminute %dsecond.\n",minute, second );
+	printf("x=%d", x);
+	printf("y=%d\n", y);
+	printf("x=%d", y);
+	printf("y=%d", x);
 
+	
 	return 0;
 }
 
