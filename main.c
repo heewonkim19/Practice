@@ -2,18 +2,23 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-/* ID & PASSWORD */
+/* sun_light */
 int main(int argc, char *argv[]) {
+    
+	double light_speed = 300000;
+    double distance = 149600000;
+    
+    int time;
+    int minute;
+    int second;
+    time = distance / light_speed;
+	minute = time / 60;
+	second = time % 60; 
 	
-	int ID;
-	int PASSWORD;
-	
-	printf ("please enter ID and PASSWODR in 4 number: \n");
-	printf ("ID: ____\b\b\b\b");
-	scanf ("%d", &ID);
-	printf ("PASSWORD: ____\b\b\b\b");
-	scanf ("%d", &PASSWORD);
-	printf ("\aID is \"%d\"and PASSWORD is \"%d\".\nRight?", ID, PASSWORD);
+	printf("light_speed is %fkm \n", light_speed);
+	printf("distance is %f km \n", distance);
+	printf("time is %dminute %dsecond.\n",minute, second );
+
 	return 0;
 }
 
